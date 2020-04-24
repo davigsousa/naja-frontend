@@ -6,6 +6,7 @@ import {
 
 import { isAuthenticated } from './services/auth';
 
+import App from './App';
 import Login from './pages/Login';
 import Panel from './pages/Panel';
 
@@ -18,7 +19,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
       render={(props) => (
         isAuthenticated()
           ? <Component {...props} />
-          : <Redirect to={{ pathname: '/login', state: { from: location.pathname } }} />
+          : <Redirect to={{ pathname: '/', state: { from: location.pathname } }} />
       )}
     />
   );
@@ -30,10 +31,12 @@ PrivateRoute.propTypes = {
 
 const Routes = () => (
   <BrowserRouter>
-    <Route path="/login" component={Login} />
-    <Switch>
-      <PrivateRoute path="/painel" component={Panel} />
-    </Switch>
+    <App>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <Route path="/painel" component={Panel} />
+      </Switch>
+    </App>
   </BrowserRouter>
 );
 

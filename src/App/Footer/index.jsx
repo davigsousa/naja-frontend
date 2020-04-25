@@ -2,10 +2,10 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="page-footer " style={{ padding: 0 }}>
+    <footer className="page-footer" style={{ padding: 0 }}>
       <div className="footer-copyright">
-        <div className="container">
-          © 2020 Todos os direitos reservados Codex Jr.
+        <div className="container" style={{ color: 'white', textAlign: 'center' }}>
+          © 2020 Todos os direitos reservados Naja Informática
         </div>
       </div>
     </footer>

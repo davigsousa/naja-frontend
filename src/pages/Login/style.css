@@ -1,0 +1,70 @@
+@import './style-mobile.css';
+
+.login-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 3vw auto;
+  padding: 8vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--primary-darker);
+  color: white;
+  border-radius: 20px;
+}
+
+.login-header {
+  margin-bottom: 10vh;
+  color: var(--secondary);
+}
+
+.login-header > img {
+  max-width: 100%;
+}
+
+.login-header > h1 {
+  font-size: 300%;
+  margin: 0;
+}
+
+.login-info > h2 {
+  margin: 0;
+  font-size: 200%;
+}
+
+.login-info > p {
+  margin: 0;
+}
+
+.login-info {
+  margin-bottom: 5vh;
+}
+
+.social-button {
+  color: white;
+  font-size: 1.1vw;
+  font-weight: bold;
+  width: 300px;
+  padding: 1.5vw 2vw;
+  border: none;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border: solid 2px var(--primary);
+}
+
+.social-button:hover {
+  cursor: pointer;
+  background-color: #333;
+  border: solid 2px var(--secondary-darker);
+}
+
+.social-button > img {
+  width: 15%;
+  margin-right: 5%;
+}

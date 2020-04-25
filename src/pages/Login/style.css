@@ -2,7 +2,7 @@
 
 .login-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 768px;
   margin: 3vw auto;
   padding: 8vw;
 
@@ -45,7 +45,6 @@
 
 .social-button {
   color: white;
-  font-size: 1.1vw;
   font-weight: bold;
   width: 300px;
   padding: 1.5vw 2vw;

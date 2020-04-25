@@ -9,7 +9,8 @@
 }
 
 * {
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Baloo Bhaina 2', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,5 @@ body {
 @media only screen and (max-width : 992px) {
   .app-container {
     padding-left: 0;
-    width: 100vw;
   }
 }

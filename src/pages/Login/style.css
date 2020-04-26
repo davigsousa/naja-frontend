@@ -50,19 +50,11 @@
   font-size: 1rem;
   width: 300px;
   padding: 1.5vw 2vw;
-  border: none;
   border-radius: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--primary);
-  border: solid 2px var(--primary);
-}
-
-.social-button:hover {
-  cursor: pointer;
-  background-color: #333;
-  border: solid 2px var(--secondary-darker);
 }
 
 .social-button > img {

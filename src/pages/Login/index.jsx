@@ -51,7 +51,7 @@ function Login() {
                     type="button"
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
-                    className="social-button"
+                    className="social-button btn"
                   >
                     <img src={google} alt="google" className="responsive-img" />
                     Fazer login com o Google

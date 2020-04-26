@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   background-color: var(--bg);
   margin: 0;
@@ -21,6 +26,16 @@ body {
 .app-container {
   margin: 0 auto;
   max-width: 1920px;
+}
+
+.btn {
+  border: solid 2px var(--primary);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #333;
+  border: solid 2px var(--secondary-darker);
 }
 
 ::-webkit-scrollbar-track {

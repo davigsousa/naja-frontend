@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FaPlusCircle, FaTimesCircle } from 'react-icons/fa';
 
 // import { getUser, logout } from '../../../../services/auth';
 
@@ -7,8 +8,6 @@ import avatar from '../../../../assets/avatar.png';
 import './style.css';
 
 function SideNav() {
-  const history = useHistory();
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [categories, setCategories] = useState([]);
@@ -36,22 +35,28 @@ function SideNav() {
 
       <li>
         <div className="panel-categories">
-          <h4>Categorias</h4>
+          <div>
+            <h4>Categorias</h4>
+            <div className="new-category btn">
+              Criar nova
+              <FaPlusCircle />
+            </div>
+          </div>
           <ul className="panel-categories-list">
+            <li>
+              <Link to="/painel">Todos</Link>
+            </li>
             {
               categories.map((category) => (
                 <li>
-                  <Link to={`/painel/${encodeURI(category)}`}>{category}</Link>
+                  <Link to={`/painel/${encodeURI(category)}`}>
+                    <p>{category}</p>
+                    <FaTimesCircle />
+                  </Link>
                 </li>
               ))
             }
           </ul>
-        </div>
-      </li>
-
-      <li>
-        <div className="panel-logout">
-          <button type="button">Encerrar Sessão</button>
         </div>
       </li>
     </ul>

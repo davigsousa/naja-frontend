@@ -23,6 +23,17 @@ body {
   max-width: 1920px;
 }
 
+::-webkit-scrollbar-track {
+  background-color: var(--primary-darker);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--primary-darker);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
 @media only screen and (max-width : 992px) {
   .app-container {
     padding-left: 0;

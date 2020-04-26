@@ -1,19 +1,19 @@
 import React from 'react';
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { GoogleLogin } from 'react-google-login';
 
-// import api from '../../services/api';
-// import { login } from '../../services/auth';
+import api from '../../services/api';
+import { login } from '../../services/auth';
 
 import './style.css';
 import google from '../../assets/google.png';
 import banner from '../../assets/banner.png';
 
 function Login() {
-  // const history = useHistory();
+  const history = useHistory();
 
-  const handleGoogle = async () => {
-    /* const response = await api({
+  const handleGoogle = async ({ accessToken }) => {
+    const response = await api({
       method: 'POST',
       url: '/auth/login',
       headers: {
@@ -22,9 +22,9 @@ function Login() {
     });
 
     const { user, token } = response.data;
-    login(token, user); */
+    login(token, user);
 
-    // history.push('/painel');
+    history.push('/painel');
   };
 
   return (

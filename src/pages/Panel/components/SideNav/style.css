@@ -1,0 +1,9 @@
+.sidenav {
+  width: 300px;
+  list-style: none;
+}
+
+.user-info > img {
+  width: 100px;
+  border-radius: 50%;
+}

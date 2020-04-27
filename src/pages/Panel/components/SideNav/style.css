@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   width: 300px;
-  min-height: 100vh;
+  height: 100vh;
   list-style: none;
+  border-right: solid 2px #222;
   border-right: solid 2px #222;
   color: white;
   display: grid;
-  grid-template-rows: 200px 1fr;
+  grid-template-rows: 200px 70vh;
 }
 
 .user-info {
@@ -28,11 +29,29 @@
 
 .user-info > p {
   margin: 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info > p > svg {
+  color: var(--secondary);
+}
+
+.user-info > p > svg:hover {
+  cursor: pointer;
 }
 
 .user-info > img {
   width: 70px;
   border-radius: 50%;
+}
+
+.user-info > svg {
+  position: relative;
+  top: 10px;
+  right: 10px;
 }
 
 .panel-categories {
@@ -50,6 +69,11 @@
   font-size: 1.4rem;
 }
 
+.panel-categories > div > button {
+  color: white;
+  font-size: 1rem;
+}
+
 .new-category {
   display: flex;
   align-items: center;
@@ -65,11 +89,15 @@
 }
 
 .panel-categories-list {
-  max-height: 400px;
+  max-height: 50vh;
+  overflow: hidden; 
   padding-left: 10px;
-  overflow:hidden; 
-  overflow-y:scroll;
   list-style: none;
+  border-bottom: solid 2px var(--primary);
+}
+
+.panel-categories-list:hover {
+  overflow-y: scroll;
 }
 
 .panel-categories-list > li {

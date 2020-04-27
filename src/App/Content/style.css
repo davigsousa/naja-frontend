@@ -1,5 +1,6 @@
 .app-content {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100vh;
+  height: 100vh;
 }

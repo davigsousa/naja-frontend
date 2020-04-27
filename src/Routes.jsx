@@ -35,7 +35,8 @@ const Routes = () => (
       <Switch>
         <Route exact path="/" component={() => <Redirect to="/login" />} />
         <Route path="/login" component={Login} />
-        <Route path="/painel" component={Panel} />
+        <PrivateRoute path="/painel/:category" component={Panel} />
+        <PrivateRoute exact path="/painel" component={() => <Redirect to="/painel/Todos" />} />
       </Switch>
     </App>
   </BrowserRouter>

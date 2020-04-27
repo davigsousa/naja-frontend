@@ -15,7 +15,7 @@ function Login() {
   const handleGoogle = async ({ accessToken }) => {
     const response = await api({
       method: 'POST',
-      url: '/auth/login',
+      url: '/login',
       headers: {
         accesstoken: accessToken,
       },

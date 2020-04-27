@@ -1,23 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import Products from './components/Products';
 import SideNav from './components/SideNav';
 
-class Panel extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      categories: [],
-      products: [],
-      actualCategory: '',
-    };
-  }
-
-  render() {
-    return (
+function Panel() {
+  return (
+    <>
       <SideNav />
-    );
-  }
+      <Products />
+    </>
+  );
 }
 
 export default Panel;

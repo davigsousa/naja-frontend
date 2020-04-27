@@ -23,6 +23,30 @@ body {
   margin: 0;
 }
 
+button {
+  outline: none;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: var(--primary-darker);
+  border: none;
+  margin-bottom: 30px;
+}
+
 .app-container {
   margin: 0 auto;
   max-width: 1920px;
@@ -36,6 +60,28 @@ body {
   cursor: pointer;
   background-color: #333;
   border: solid 2px var(--secondary-darker);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  border: solid 3px var(--secondary);
+  color: white;
+  border-radius: 20px;
+  outline: 0;
+  padding: 50px;
+}
+
+.modal button {
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  background-color: var(--primary);
+  border-radius: 20px;
+  border: solid 2px var(--primary);
+  color: white;
 }
 
 ::-webkit-scrollbar-track {

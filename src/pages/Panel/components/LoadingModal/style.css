@@ -1,0 +1,19 @@
+.loading-modal {
+  background: rgba(0, 0, 0, 0.20);
+}
+
+.loading-svg {
+  animation-name: girando;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes girando {
+  from {
+   transform: rotate(0deg);
+ }
+ to {
+   transform: rotate(360deg);
+ }
+}

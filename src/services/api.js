@@ -1,8 +1,10 @@
 import axios from 'axios';
 import { getToken } from './auth';
 
+const baseURL = 'http://localhost:3333/';
+
 const api = axios.create({
-  baseURL: 'http://localhost:3333/',
+  baseURL,
 });
 
 api.interceptors.request.use(async (config) => {
@@ -14,5 +16,7 @@ api.interceptors.request.use(async (config) => {
 
   return config;
 });
+
+api.getBaseUrl = () => baseURL;
 
 export default api;

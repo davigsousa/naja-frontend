@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
-import { FaPlusCircle, FaTimesCircle } from 'react-icons/fa';
+import { FaPlusCircle, FaTimesCircle, FaPowerOff } from 'react-icons/fa';
 import { Modal } from 'react-responsive-modal';
 
 import LoadingModal from '../LoadingModal';
@@ -61,7 +61,7 @@ function SideNav() {
             <h1>{user.name}</h1>
             <p>
               {user.email}
-              <FaTimesCircle onClick={() => setLgModal(true)} />
+              <FaPowerOff onClick={() => setLgModal(true)} />
             </p>
           </div>
         </li>

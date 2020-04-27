@@ -1,7 +1,16 @@
 .product-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: none;
+  color: white;
+  width: 100%;
   border: none;
   font-size: 1rem;
+}
+
+.product-button:hover {
+  cursor: pointer;
 }
 
 .product-item {
@@ -35,6 +44,10 @@
 }
 
 .product-detail {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,4 +57,8 @@
 
 .product-detail > span {
   font-weight: bold;
+}
+
+.product-trash:hover {
+  cursor: pointer;
 }

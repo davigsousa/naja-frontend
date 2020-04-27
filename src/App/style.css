@@ -75,8 +75,13 @@ input {
   padding: 50px;
 }
 
+.modal > h1 {
+  margin-top: 50px;
+}
+
 .modal button {
   font-size: 1.1rem;
+  margin: 20px;
   padding: 5px 10px;
   background-color: var(--primary);
   border-radius: 20px;

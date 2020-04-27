@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getToken } from './auth';
 
-const baseURL = 'http://localhost:3333/';
+const baseURL = 'https://estoque-naja.herokuapp.com/';
 
 const api = axios.create({
   baseURL,

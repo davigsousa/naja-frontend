@@ -24,5 +24,6 @@ module.exports = {
   rules: {
     "react/jsx-props-no-spreading": "off",
     "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
   },
 };
